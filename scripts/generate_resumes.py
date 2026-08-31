@@ -22,7 +22,7 @@ from reportlab.platypus import (
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "assets" / "resume"
 VERSION = "2.0.0"
-COMMIT = "babf86b"
+COMMIT = "109eb0b"
 BLUE = colors.HexColor("#1d4f7a")
 LIGHT_BLUE = colors.HexColor("#eaf2f8")
 TEXT = colors.HexColor("#1b262c")
