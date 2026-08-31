@@ -3,20 +3,35 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Black-BKP</title>
+    <title>Korakod Phongdee | Software Engineer</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/css/adminlte.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;600;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        * { font-family: 'Roboto', sans-serif; }
+        * { font-family: 'Noto Sans Thai', 'Source Sans Pro', sans-serif; }
         .primary { color: #3282B8; }
         .secondary { color: #1B262C; }
+        .resume-toolbar { position: sticky; top: 0; z-index: 1000; background: rgba(255, 255, 255, .96); border-bottom: 1px solid #dee2e6; }
+        .resume-toolbar .btn { min-width: 88px; }
+        .version-footer { color: #6c757d; font-size: .8rem; }
+        @media print { .resume-toolbar, .version-footer { display: none !important; } }
     </style>
 </head>
     <body>
         <div class="container-fluid">
-            <main role="main" class="pb-3">
+            <nav class="resume-toolbar row align-items-center justify-content-center p-2" aria-label="Resume controls">
+                <div class="btn-group mr-2" role="group" aria-label="Language">
+                    <button type="button" class="btn btn-sm btn-primary active" id="language-en" data-language="en">English</button>
+                    <button type="button" class="btn btn-sm btn-outline-primary" id="language-th" data-language="th">ไทย</button>
+                </div>
+                <div class="btn-group" role="group" aria-label="PDF downloads">
+                    <a class="btn btn-sm btn-outline-secondary" href="assets/resume/Korakod-Phongdee-Resume-EN.pdf" download="Korakod-Phongdee-Resume-EN.pdf"><i class="fas fa-file-pdf"></i> English PDF</a>
+                    <a class="btn btn-sm btn-outline-secondary" href="assets/resume/Korakod-Phongdee-Resume-TH.pdf" download="Korakod-Phongdee-Resume-TH.pdf"><i class="fas fa-file-pdf"></i> PDF ภาษาไทย</a>
+                </div>
+            </nav>
+            <main role="main" class="pb-3" id="resume-content">
                 <div class="row p-4" style="row-gap: 10px;">
                     <div class="container-fluid">
                         <div class="row mb-auto">
@@ -27,71 +42,69 @@
                                             <div class="text-center" hidden>
                                                 <img class="profile-user-img img-fluid img-circle" src="cat.jpg" alt="User profile picture">
                                             </div>
-                                            <h3 class="primary profile-username text-center" style="font-size:32px">Korakod Phongdee (Black)</h3>
-                                            <p class="primary text-center" style="font-size:22px">Mechatronic Engineer</p>
-                                            <p class="primary text-center" style="font-size:22px">.NET Full-Stack Developer</p>
+                                            <h1 class="primary profile-username text-center" style="font-size:32px">Korakod Phongdee (Black)</h1>
+                                            <p class="primary text-center" style="font-size:22px" data-i18n="headline">Software Engineer | C++ / .NET | Automation Engineer</p>
                                         </div>
                                         <hr>
                                         <div class="form-group">
-                                            <strong class="primary" style="font-size:18px"><i class="fas fa-location-dot"></i> Addreess</strong>
-                                            <p class="secondary">Samutprakarn, Thailand, 10540</p>
+                                            <strong class="primary" style="font-size:18px"><i class="fas fa-address-card"></i> <span data-i18n="contact">Contact</span></strong>
+                                            <p class="secondary mb-1"><i class="fas fa-location-dot"></i> <span data-i18n="bangkok">Bangkok, Thailand</span></p>
+                                            <p class="secondary mb-1"><i class="fas fa-phone"></i> <a href="tel:+66959718562">095-971-8562</a></p>
+                                            <p class="secondary"><i class="fas fa-envelope"></i> <a href="mailto:black.bkp@gmail.com">black.bkp@gmail.com</a></p>
                                         </div>
                                         <hr>
                                         <div class="form-group">
-                                            <strong class="primary" style="font-size:18px"><i class="fas fa-user-graduate"></i> Educations</strong>
+                                            <strong class="primary" style="font-size:18px"><i class="fas fa-user"></i> <span data-i18n="profile">Profile</span></strong>
+                                            <p class="secondary mt-2" data-i18n="profileText">.NET full-stack developer with software and hardware backgrounds spanning web and desktop applications, REST APIs, embedded systems, IoT, and industrial protocol integration. Experienced in insurance technology, industrial label printing, RFID solutions, rail signaling simulators, and industrial IoT.</p>
+                                        </div>
+                                        <hr>
+                                        <div class="form-group">
+                                            <strong class="primary" style="font-size:18px"><i class="fas fa-user-graduate"></i> <span data-i18n="education">Education</span></strong>
                                         </div>
                                         <div class="form-group row" style="row-gap: 10px;">
-                                            <div class="col-xl-12"><b class="primary">Bachelor Degree in Engineering Mechatronics</b></div>
-                                            <div class="col-xl-9 col-md-6 text-left"><label>Mahanakorn University of Technology</label></div>
-                                            <div class="col-xl-3 col-md-6 text-right"><span>Bangkok, Thailand</span></div>
+                                            <div class="col-xl-12"><b class="primary" data-i18n="bachelor">Bachelor Degree in Engineering Mechatronics</b></div>
+                                            <div class="col-xl-9 col-md-6 text-left"><label data-i18n="mut">Mahanakorn University of Technology</label></div>
+                                            <div class="col-xl-3 col-md-6 text-right"><span data-i18n="bangkok">Bangkok, Thailand</span></div>
                                             <div class="col-xl-9 col-md-6 text-left"><span>2017 - 2020</span></div>
                                             <div class="col-xl-3 col-md-6 text-right"><span>GPA 2.81</span></div>
                                         </div>
                                         <div class="form-group row" style="row-gap: 10px;">
-                                            <div class="col-xl-12"><b class="primary">High Vocational Certificate in Technology Computer Hardware</b></div>
-                                            <div class="col-xl-9 col-md-6 text-left"><label>Eastern Technological College E-TECH</label></div>
-                                            <div class="col-xl-3 col-md-6 text-right"><span>Chonburi, Thailand</span></div>
+                                            <div class="col-xl-12"><b class="primary" data-i18n="highVocational">High Vocational Certificate in Technology Computer Hardware</b></div>
+                                            <div class="col-xl-9 col-md-6 text-left"><label data-i18n="etech">Eastern Technological College E-TECH</label></div>
+                                            <div class="col-xl-3 col-md-6 text-right"><span data-i18n="chonburi">Chonburi, Thailand</span></div>
                                             <div class="col-xl-9 col-md-6 text-left"><span>2015 - 2017</span></div>
                                             <div class="col-xl-3 col-md-6 text-right"><span>GPA 3.58</span></div>
                                         </div>
                                         <div class="form-group row" style="row-gap:10px">
-                                            <div class="col-xl-12"><b class="primary">Vocational Certificate in Electronics</b></div>
-                                            <div class="col-xl-9 col-md-6 text-left"><label>Eastern Technological College E-TECH</label></div>
-                                            <div class="col-xl-3 col-md-6 text-right"><span>Chonburi, Thailand</span></div>
+                                            <div class="col-xl-12"><b class="primary" data-i18n="vocational">Vocational Certificate in Electronics</b></div>
+                                            <div class="col-xl-9 col-md-6 text-left"><label data-i18n="etech">Eastern Technological College E-TECH</label></div>
+                                            <div class="col-xl-3 col-md-6 text-right"><span data-i18n="chonburi">Chonburi, Thailand</span></div>
                                             <div class="col-xl-9 col-md-6 text-left"><span>2012 - 2015</span></div>
                                             <div class="col-xl-3 col-md-6 text-right"><span>GPA 3.89</span></div>                                            
                                         </div>
                                         <hr>
                                         <div class="form-group row" style="row-gap: 10px;">
-                                            <div class="col-xl-12"><strong class="primary" style="font-size:18px"><i class="fas fa-star"></i> Skills</strong></div>
+                                            <div class="col-xl-12"><strong class="primary" style="font-size:18px"><i class="fas fa-star"></i> <span data-i18n="skills">Skills</span></strong></div>
                                             <div class="col-xl-12">
-                                                <label>Engineering</label>
                                                 <ul>
-                                                    <li>Engineering Drawing (Solidworks, AutoCAD)</li>
-                                                    <li>Electrical and Electronics</li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-xl-12">
-                                                <label>Software Development</label>
-                                                <ul>
-                                                    <li>Database (Microsoft SQL, Postgresql)</li>
-                                                    <li>Desktop Application (C# .NET)</li>
-                                                    <li>IOT, Embedded (C, C++, Python)</li>
-                                                    <li>Mobile Application Development (C# Xamarin)</li>
-                                                    <li>Web Development (HTML, CSS, JavaScript, Jquery)</li>
+                                                    <li data-i18n-html="skillFrontend"><b>Frontend:</b> HTML, CSS3, JavaScript, jQuery, Bootstrap, React</li>
+                                                    <li data-i18n-html="skillBackend"><b>Backend:</b> C# (.NET Framework, .NET Core), C++, Python, Lua, Node.js</li>
+                                                    <li data-i18n-html="skillDatabase"><b>Database:</b> Microsoft SQL Server, PostgreSQL, MySQL</li>
+                                                    <li data-i18n-html="skillApi"><b>API &amp; Integration:</b> RESTful APIs, AEP, RFID systems</li>
+                                                    <li data-i18n-html="skillIot"><b>Embedded / IoT:</b> Arduino, Raspberry Pi, Node-RED, Linux</li>
+                                                    <li data-i18n-html="skillProtocols"><b>Industrial protocols:</b> RS232, RS485, Modbus, LoRaWAN</li>
+                                                    <li data-i18n-html="skillEngineering"><b>Engineering:</b> SolidWorks, engineering drawing, basic electronics</li>
                                                 </ul>
                                             </div>
                                         </div>
                                         <hr>
                                         <strong class="primary" style="font-size:18px">
-                                            <i class="fas fa-award"></i> Certificates
+                                            <i class="fas fa-language"></i> <span data-i18n="languages">Languages</span>
                                         </strong>
                                         <div class="form-group">
                                             <ul>
-                                                <li>TOEIC (2023) - 850 Listening 470, Reading 380</li>
-                                                <li>Sketching for UX Designer (2022)</li>
-                                                <li>C# Basics for Beginner (2022)</li>
-                                                <li>TOEIC (2020) - 750 Listening 380, Reading 370</li>
+                                                <li data-i18n-html="thaiLanguage"><b>Thai:</b> Native</li>
+                                                <li data-i18n-html="englishLanguage"><b>English:</b> TOEIC 850 (2023)</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -100,76 +113,69 @@
                             <div class="col-xl-7">
                                 <div class="card shadow">
                                     <div class="card-body">
+                                        <div class="form-group">
+                                            <strong class="primary" style="font-size:18px"><i class="fas fa-briefcase"></i> <span data-i18n="workExperience">Work Experience</span></strong>
+                                        </div>
+                                        <hr />
                                         <div class="form-group row" style="row-gap: 10px;">
-                                            <div class="col-xl-9 col-lg-9 col-md-6 text-left"><strong class="primary" style="font-size:18px">SATO Auto-ID Thailand Co.,Ltd.</strong></div>
-                                            <div class="col-xl-3 col-lg-3 col-md-6 text-right"><span>Bangkok, Thailand</span></div>
-                                            <div class="col-xl-9 col-lg-9 col-md-6 text-left"><b>Programmer</b> in Customer Service Department</div>
-                                            <div class="col-xl-3 col-lg-3 col-md-6 text-right"><span>2023 - Present</span></div>
+                                            <div class="col-xl-9 col-lg-9 col-md-6 text-left"><strong class="primary" style="font-size:18px">TBROKER CO., LTD.</strong></div>
+                                            <div class="col-xl-3 col-lg-3 col-md-6 text-right"><span data-i18n="bangkok">Bangkok, Thailand</span></div>
+                                            <div class="col-xl-9 col-lg-9 col-md-6 text-left"><b data-i18n="tbrokerRole">Software Developer - Assistant Manager, Business Analyst</b></div>
+                                            <div class="col-xl-3 col-lg-3 col-md-6 text-right"><span data-i18n="tbrokerDates">Mar 2025 - May 2026</span></div>
                                             <div class="col-xl-12">
                                                 <ul>
-                                                    <li>Plan and estimate manday for develop web application</li>
-                                                    <li>Develop web applications using C# .NET to help support Label Printing System or other projects</li>
-                                                    <li>Develop software for deployed on Sato Printer using AEP(Application Enabled Printing)</li>
-                                                    <li>Make user manual for developed software</li>
+                                                    <li data-i18n="tbroker1">Developed and maintained a web application supporting agents' sales operations.</li>
+                                                    <li data-i18n="tbroker2">Developed and maintained REST APIs integrated with external platforms, including LINE Chatbot and Core Systems.</li>
+                                                    <li data-i18n="tbroker3">Performed SIT and UAT testing to prevent software malfunctions before release.</li>
+                                                    <li data-i18n="tbroker4">Collaborated with an external penetration testing vendor to identify and resolve web application security vulnerabilities.</li>
+                                                    <li data-i18n="tbroker5">Planned and estimated development time and resources based on business requirements.</li>
+                                                    <li data-i18n="tbroker6">Provided technical support and troubleshooting for agents and end users.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div class="form-group row" style="row-gap: 10px;">
+                                            <div class="col-xl-9 col-lg-9 col-md-6 text-left"><strong class="primary" style="font-size:18px">SATO Auto-ID (Thailand) Co., Ltd.</strong></div>
+                                            <div class="col-xl-3 col-lg-3 col-md-6 text-right"><span data-i18n="samutprakarn">Samutprakarn, Thailand</span></div>
+                                            <div class="col-xl-9 col-lg-9 col-md-6 text-left"><b data-i18n="satoRole">Software Developer - Customer Service</b></div>
+                                            <div class="col-xl-3 col-lg-3 col-md-6 text-right"><span data-i18n="satoDates">Jan 2024 - Feb 2025</span></div>
+                                            <div class="col-xl-12">
+                                                <ul>
+                                                    <li data-i18n="sato1">Developed .NET web applications supporting a Label Printing System and RFID solutions.</li>
+                                                    <li data-i18n="sato2">Built AEP applications enabling stand-alone printing on SATO printers.</li>
+                                                    <li data-i18n="sato3">Delivered tailor-made software solutions based on individual customer requirements.</li>
+                                                    <li data-i18n="sato4">Provided on-site installation and on-site/remote troubleshooting support.</li>
+                                                    <li data-i18n="sato5">Produced project documentation, including user manuals, system diagrams, man-day estimates, and wireframe demos.</li>
                                                 </ul>
                                             </div>
                                         </div>
                                         <hr />
                                         <div class="form-group row" style="row-gap: 10px;">
                                             <div class="col-xl-9 col-lg-9 col-md-6 text-left"><strong class="primary" style="font-size:18px">D.T.C. Enterprise Public Company Limited</strong></div>
-                                            <div class="col-xl-3 col-lg-3 col-md-6 text-right"><span>Bangkok, Thailand</span></div>
-                                            <div class="col-xl-9 col-lg-9 col-md-6 text-left"><b>R&D Officer</b> in Hardware IOT Team</div>
-                                            <div class="col-xl-3 col-lg-3 col-md-6 text-right"><span>2023 - 2023 </span></div>
+                                            <div class="col-xl-3 col-lg-3 col-md-6 text-right"><span data-i18n="samutprakarn">Samutprakarn, Thailand</span></div>
+                                            <div class="col-xl-9 col-lg-9 col-md-6 text-left"><b data-i18n="dtcRole">Engineer - Research &amp; Development (Hardware IoT)</b></div>
+                                            <div class="col-xl-3 col-lg-3 col-md-6 text-right"><span data-i18n="dtcDates">Jul 2023 - Sep 2023</span></div>
                                             <div class="col-xl-12">
                                                 <ul>
-                                                    <li>Develop products' firmware using C, C++ or Python</li>
-                                                    <li>On-site install or troubleshooting</li>
-                                                    <li>Make document for developed products</li>
-                                                    <li>Make prototype product</li>
-                                                    <li>Collect data to train AI and improve prediction result accuracy</li>
+                                                    <li data-i18n="dtc1">Evaluated and tested sensors and hardware devices in real-world applications.</li>
+                                                    <li data-i18n="dtc2">Developed embedded firmware and data processing pipelines for IoT deployments.</li>
+                                                    <li data-i18n="dtc3">Collected and pre-processed datasets to support AI model training and improve prediction accuracy.</li>
+                                                    <li data-i18n="dtc4">Designed and built IoT product prototypes for proof-of-concept validation.</li>
                                                 </ul>
                                             </div>
                                         </div>
                                         <hr />
                                         <div class="form-group row" style="row-gap: 10px;">
-                                            <div class="col-xl-9 col-lg-9 col-md-6 text-left"><strong class="primary" style="font-size:18px">Contrologic.Co.,Ltd</strong></div>
-                                            <div class="col-xl-3 col-lg-3 col-md-6 text-right"><span>Bangkok, Thailand</span></div>
-                                            <div class="col-xl-9 col-lg-9 col-md-6 text-left"><b>R&D Officer</b> in Research and Development team in Engineering Department</div>
-                                            <div class="col-xl-3 col-lg-3 col-md-6 text-right"><span>2020 - 2023 </span></div>
+                                            <div class="col-xl-9 col-lg-9 col-md-6 text-left"><strong class="primary" style="font-size:18px">Contrologic Co., Ltd.</strong></div>
+                                            <div class="col-xl-3 col-lg-3 col-md-6 text-right"><span data-i18n="bangkok">Bangkok, Thailand</span></div>
+                                            <div class="col-xl-9 col-lg-9 col-md-6 text-left"><b data-i18n="contrologicRole">Engineer - Research and Development</b></div>
+                                            <div class="col-xl-3 col-lg-3 col-md-6 text-right"><span data-i18n="contrologicDates">2020 - Jun 2023</span></div>
                                             <div class="col-xl-12">
                                                 <ul>
-                                                    <li>Plan and estimated software development manday and schedule</li>
-                                                    <li>Develop, debug and test desktop, mobile and web applications for customers and company using C# .NET</li>
-                                                    <li>Make user manual or documents related to developed softwares</li>
-                                                    <li>Develop demo software for present to customer</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <hr />
-                                        <div class="form-group row" style="row-gap: 10px;">
-                                            <div class="col-xl-9 col-lg-9 col-md-6 text-left"><strong class="primary" style="font-size:18px">Greenpro KSP Business Solutions</strong></div>
-                                            <div class="col-xl-3 col-lg-3 col-md-6 text-right"><span>Bangkok, Thailand</span></div>
-                                            <div class="col-xl-9 col-lg-9 col-md-6 text-left"><b>Programmer</b> in Business Solutions Team</div>
-                                            <div class="col-xl-3 col-lg-3 col-md-6 text-right"><span>2020 - 2020</span></div>
-                                            <div class="col-xl-12">
-                                                <ul>
-                                                    <li>Develop, debug and test desktop window form application using C# .NET</li>
-                                                    <li>Develop, debug and test web application using Odoo</li>
-                                                    <li>Design report using report designer such as Jasper Report</li>
-                                                    <li>Install software for customer</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <hr />
-                                        <div class="form-group row" style="row-gap: 10px;">
-                                            <div class="col-xl-9 col-lg-9 col-md-6 text-left"><strong class="primary" style="font-size:18px">Thaiglass Industries Public Company Limited</strong></div>
-                                            <div class="col-xl-3 col-lg-3 col-md-6 text-right"><span>Samutprakarn, Thailand</span></div>
-                                            <div class="col-xl-9 col-lg-9 col-md-6 text-left"><b>Technician</b> in Cold End Engineering Team</div>
-                                            <div class="col-xl-3 col-lg-3 col-md-6 text-right"><span>2017 - 2017</span></div>
-                                            <div class="col-xl-12">
-                                                <ul>
-                                                    <li>Predictive and preventive machines maintenance in Cold End Engineering department</li>
-                                                    <li>Set up sensors to detect defects on product</li>
+                                                    <li data-i18n="contrologic1">Designed and developed desktop, web, and mobile applications for internal use and external clients.</li>
+                                                    <li data-i18n="contrologic2">Developed software to read and process sensor and controller data via RS232, RS485, Modbus, and LoRaWAN.</li>
+                                                    <li data-i18n="contrologic3">Connected sensors and hardware tools to existing systems and built POC prototypes to validate new solutions.</li>
+                                                    <li data-i18n="contrologic4">Produced user manuals, system diagrams, man-day estimates, and budget plans.</li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -180,10 +186,15 @@
                     </div>
                 </div>
             </main>
+            <footer class="version-footer text-center pb-3">
+                <span data-i18n="versionLabel">Version</span> <span id="app-version">2.0.0</span>
+                &middot; <span data-i18n="commitLabel">Commit</span> <span id="commit-version">pending</span>
+            </footer>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/js/adminlte.min.js"></script>
+        <script src="app.js"></script>
     </body>
 </html>
