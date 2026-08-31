@@ -35,7 +35,7 @@ pdfmetrics.registerFontFamily("Tahoma", normal="Tahoma", bold="Tahoma-Bold")
 
 RESUMES = {
     "EN": {
-        "headline": "Software Engineer | C++ / .NET | Automation Engineer",
+        "headline": "Software Engineer | .NET, C++ & Industrial IoT",
         "location": "Bangkok, Thailand",
         "profile_title": "PROFILE",
         "profile": ".NET full-stack developer with software and hardware backgrounds spanning web and desktop applications, REST APIs, embedded systems, IoT, and industrial protocol integration. Experienced in insurance technology, industrial label printing, RFID solutions, rail signaling simulators, and industrial IoT.",
@@ -86,7 +86,7 @@ RESUMES = {
         "languages": "Thai: Native | English: TOEIC 850 (2023)",
     },
     "TH": {
-        "headline": "วิศวกรซอฟต์แวร์ | C++ / .NET | วิศวกรระบบอัตโนมัติ",
+        "headline": "วิศวกรซอฟต์แวร์ | .NET, C++ และ Industrial IoT",
         "location": "กรุงเทพมหานคร, ประเทศไทย",
         "profile_title": "ประวัติโดยย่อ",
         "profile": "นักพัฒนา .NET Full-stack ที่มีพื้นฐานทั้งซอฟต์แวร์และฮาร์ดแวร์ ครอบคลุมเว็บและเดสก์ท็อปแอปพลิเคชัน REST API ระบบสมองกลฝังตัว IoT และการเชื่อมต่อโปรโตคอลอุตสาหกรรม มีประสบการณ์ในธุรกิจประกันภัย ระบบพิมพ์ฉลากอุตสาหกรรม RFID ระบบจำลองสัญญาณรถไฟ และ IoT อุตสาหกรรม",

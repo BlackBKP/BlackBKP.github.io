@@ -1,7 +1,7 @@
 const translations = {
     en: {
         pageTitle: 'Korakod Phongdee | Software Engineer',
-        headline: 'Software Engineer | C++ / .NET | Automation Engineer',
+        headline: 'Software Engineer | .NET, C++ & Industrial IoT',
         contact: 'Contact',
         bangkok: 'Bangkok, Thailand',
         samutprakarn: 'Samutprakarn, Thailand',
@@ -58,7 +58,7 @@ const translations = {
     },
     th: {
         pageTitle: 'กรกฎ พงษ์ดี | วิศวกรซอฟต์แวร์',
-        headline: 'วิศวกรซอฟต์แวร์ | C++ / .NET | วิศวกรระบบอัตโนมัติ',
+        headline: 'วิศวกรซอฟต์แวร์ | .NET, C++ และ Industrial IoT',
         contact: 'ข้อมูลติดต่อ',
         bangkok: 'กรุงเทพมหานคร, ประเทศไทย',
         samutprakarn: 'สมุทรปราการ, ประเทศไทย',
